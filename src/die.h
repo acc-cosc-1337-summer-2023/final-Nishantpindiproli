@@ -3,14 +3,12 @@
 
 class Die {
 public:
-    Die();
-    Die(int num){roll_value = num;}
-    void roll(); 
-    int rolled_value() const; 
+    void roll();
+    int rolled_value() const;
 
 private:
-    int roll_value; 
-    const int sides = 6; 
+    int roll_value;
+    int sides{6};
 };
 
-#endif 
+#endif
